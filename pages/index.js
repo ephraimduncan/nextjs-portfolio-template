@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
       <Navbar />
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1>Hello</h1>
+        <Hero />
       </main>
 
       {/* <footer className="flex items-center justify-center w-full h-24">
