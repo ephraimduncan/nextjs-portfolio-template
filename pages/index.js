@@ -1,4 +1,5 @@
 import Head from "next/head";
+import BlogPreview from "../components/BlogPreview";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 
@@ -10,14 +11,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <Hero />
-      </main>
-
-      {/* <footer className="flex items-center justify-center w-full h-24">
-        footer
-      </footer> */}
+      <Hero />
+      <BlogPreview />
     </div>
   );
 }
