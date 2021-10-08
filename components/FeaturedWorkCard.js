@@ -1,12 +1,7 @@
 export default function FeaturedWorkCard() {
   return (
     <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-      <img
-        src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-        className="object-cover w-full h-64"
-        alt=""
-      />
-      <div className="p-5 border border-t-0">
+      <div className="p-5 m-5 ">
         <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
           <a
             href="/"
