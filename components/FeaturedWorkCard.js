@@ -1,7 +1,7 @@
 export default function FeaturedWorkCard() {
   return (
     <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-      <div className="p-5 m-5 ">
+      <div className="p-5 m-4">
         <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
           <a
             href="/"

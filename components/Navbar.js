@@ -5,9 +5,10 @@ export default function Navbar() {
     <header className="body-font border-b">
       <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+          <NavButton text="Home" url="/" />
           <NavButton text="Works" url="/work" />
-          <NavButton text="Blog" />
-          <NavButton text="Contact" />
+          <NavButton text="Blog" url="blog" />
+          <NavButton text="Contact" url="contact" />
         </nav>
       </div>
     </header>
