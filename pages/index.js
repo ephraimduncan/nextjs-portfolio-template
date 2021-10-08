@@ -15,7 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <BlogPreview />
-      <FeaturedWorksPreview />
+      <FeaturedWorksPreview id="work" />
     </div>
   );
 }

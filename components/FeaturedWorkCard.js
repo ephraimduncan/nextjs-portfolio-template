@@ -16,7 +16,6 @@ export default function FeaturedWorkCard() {
           >
             traveling
           </a>
-          <span className="text-gray-600">— 28 Dec 2020</span>
         </p>
         <a
           href="/"
@@ -30,13 +29,6 @@ export default function FeaturedWorkCard() {
           Sed ut perspiciatis unde omnis iste natus error sit sed quia
           consequuntur magni voluptatem doloremque.
         </p>
-        <a
-          href="/"
-          aria-label=""
-          className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-        >
-          Learn more
-        </a>
       </div>
     </div>
   );
