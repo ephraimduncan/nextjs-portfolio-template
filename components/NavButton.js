@@ -4,7 +4,7 @@ export default function NavButton({ text }) {
   return (
     <>
       <Link href="/">
-        <a className="m-3  text-black text-tiny font-semibold hover:text-gray-600">
+        <a className="m-3  text-black text-lg font-medium hover:text-gray-600">
           {text}
         </a>
       </Link>
