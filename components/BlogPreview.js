@@ -1,23 +1,24 @@
 import BlogCard from "./BlogCard";
+import BlogCardLarge from "./BlogCardLarge";
 
 export default function BlogPreview() {
   return (
-    <section className="text-gray-700">
-      <div className="container px-8 py-8 mx-auto">
-        <div className="flex items-center flex-wrap text-xl m-1">
-          <div className="text-indigo-500 inline-flex items-center">
-            Recent Posts
-          </div>
-          <div className="text-gray-500 hover:underline ml-auto cursor-pointer">
-            View all
-          </div>
+    <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-12">
+      <div className="flex items-center flex-wrap text-xl my-3">
+        <div className="font-sans text-2xl font-extrabold leading-none tracking-tight m-2">
+          Recent Posts
         </div>
-        <div className="flex flex-wrap">
-          <BlogCard />
+        <div className="font-sans text-2xl font-extrabold leading-none text-gray-500 hover:underline ml-auto cursor-pointer tracking-tight m-2">
+          View all
+        </div>
+      </div>
+      <div className="grid gap-10 row-gap-8 lg:grid-cols-5">
+        <BlogCardLarge />
+        <div className="flex flex-col space-y-8 lg:col-span-3">
           <BlogCard />
           <BlogCard />
         </div>
       </div>
-    </section>
+    </div>
   );
 }
