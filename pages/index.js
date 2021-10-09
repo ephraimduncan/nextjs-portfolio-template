@@ -16,7 +16,7 @@ export default function Home({ posts }) {
           mostRecentBlog={mostRecentBlog}
           recentBlog={recentBlog}
         />
-        <FeaturedWorksPreview id="work" />
+        <FeaturedWorksPreview />
       </Layout>
     </div>
   );

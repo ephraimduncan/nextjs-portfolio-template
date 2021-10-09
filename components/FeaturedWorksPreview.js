@@ -1,6 +1,10 @@
+import useSWR from "swr";
+import { fetcher } from "../lib/utils";
 import FeaturedWorkCard from "./FeaturedWorkCard";
 
-export default function FeaturedWorksPreview() {
+export default function FeaturedWorksPreview({ projects }) {
+  const { data } = useSWR("/api/projects", fetcher);
+
   return (
     <div
       id="work"
@@ -10,9 +14,16 @@ export default function FeaturedWorksPreview() {
         Featured Projects
       </div>
       <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
-        <FeaturedWorkCard />
-        <FeaturedWorkCard />
-        <FeaturedWorkCard />
+        {data &&
+          data
+            .slice(0, 3)
+            .map(({ category, title, description }) => (
+              <FeaturedWorkCard
+                category={category}
+                title={title}
+                description={description}
+              />
+            ))}
       </div>
     </div>
   );

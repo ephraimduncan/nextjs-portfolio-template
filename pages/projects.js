@@ -1,10 +1,9 @@
 import FeaturedWorkCard from "../components/FeaturedWorkCard";
 import Layout from "../components/Layout";
 import useSWR from "swr";
+import { fetcher } from "../lib/utils";
 
 export default function Work() {
-  const fetcher = (url) => fetch(url).then((r) => r.json());
-
   const { data } = useSWR("/api/projects", fetcher);
   return (
     <Layout>
@@ -25,16 +24,3 @@ export default function Work() {
     </Layout>
   );
 }
-
-// export async function getStaticProps(context) {
-//   console.log(context);
-
-//   // const res = await fetch("/api/projects");
-//   // const projects = res.json();
-
-//   return {
-//     props: {
-//       // projects,
-//     },
-//   };
-// }
