@@ -21,8 +21,6 @@ export async function getStaticProps({ params }) {
 export default function BlogPost({ postData }) {
   const { title, contentHtml, category, date } = postData;
 
-  console.log(date);
-
   return (
     <Layout>
       <div className="max-w-screen-sm px-4 py-12 mx-auto">

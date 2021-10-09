@@ -1,4 +1,3 @@
-import BlogCard from "../../components/BlogCard";
 import FeaturedWorkCard from "../../components/FeaturedWorkCard";
 import Layout from "../../components/Layout";
 import { getSortedPostsData } from "../../lib/posts";
