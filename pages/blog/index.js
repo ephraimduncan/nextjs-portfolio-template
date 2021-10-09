@@ -12,11 +12,12 @@ export default function Blog({ posts }) {
         </div>
 
         <div>
-          {posts.map(({ category, date, title, description }) => {
+          {posts.map(({ id, category, date, title, description }) => {
             return (
               <FeaturedWorkCard
                 category={category}
                 title={title}
+                id={id}
                 description={description}
               />
             );

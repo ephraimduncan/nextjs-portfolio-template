@@ -4,15 +4,6 @@ category: Web
 description: Next.js supports TypeScript by default and has built-in types for pages and the API. You can get started with TypeScript in Next.js here.
 ---
 
-# TypeScript
-
-<details>
-  <summary><b>Examples</b></summary>
-  <ul>
-    <li><a href="https://github.com/vercel/next.js/tree/canary/examples/with-typescript">TypeScript</a></li>
-  </ul>
-</details>
-
 Next.js provides an integrated [TypeScript](https://www.typescriptlang.org/)
 experience out of the box, similar to an IDE.
 
