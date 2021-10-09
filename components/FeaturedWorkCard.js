@@ -1,4 +1,8 @@
-export default function FeaturedWorkCard() {
+export default function FeaturedWorkCard({
+  category,
+  title,
+  description,
+}) {
   return (
     <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
       <div className="p-5 m-4">
@@ -9,7 +13,7 @@ export default function FeaturedWorkCard() {
             aria-label="Category"
             title="traveling"
           >
-            traveling
+            {category}
           </a>
         </p>
         <a
@@ -18,12 +22,9 @@ export default function FeaturedWorkCard() {
           title="Film It!"
           className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
         >
-          Film It!
+          {title}
         </a>
-        <p className="mb-2 text-gray-700">
-          Sed ut perspiciatis unde omnis iste natus error sit sed quia
-          consequuntur magni voluptatem doloremque.
-        </p>
+        <p className="mb-2 text-gray-700">{description}</p>
       </div>
     </div>
   );

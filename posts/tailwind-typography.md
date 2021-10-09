@@ -1,5 +1,5 @@
 ---
-title: "Tailwing Typography"
+title: "Tailwind Typography"
 date: "2020-01-03"
 category: Design
 description: "Something a wise person once told me about typography is: Typography is pretty important if you don't want your stuff to look like trash. Make it good then it won't be bad."
