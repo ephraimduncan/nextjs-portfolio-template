@@ -11,3 +11,5 @@ export default function Blog() {
     </Layout>
   );
 }
+
+export async function getStaticPaths(ctx) {}
