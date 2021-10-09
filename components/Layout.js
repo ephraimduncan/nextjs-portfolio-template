@@ -8,6 +8,10 @@ export default function Layout({ children }) {
       <Head>
         <title>My Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          href="https://unpkg.com/browse/prismjs@1.15.0/themes/prism-twilight.css"
+          rel="stylesheet"
+        />
       </Head>
       <Navbar />
       <main>{children}</main>

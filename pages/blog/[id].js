@@ -10,7 +10,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  console.log(params);
   const postData = await getPostData(params.id);
   return {
     props: {
@@ -20,9 +19,9 @@ export async function getStaticProps({ params }) {
 }
 
 export default function BlogPost({ postData }) {
-  const { title, contentHtml } = postData;
+  const { title, contentHtml, category, date } = postData;
 
-  console.log(contentHtml);
+  console.log(date);
 
   return (
     <Layout>
@@ -31,6 +30,10 @@ export default function BlogPost({ postData }) {
           {title}
         </div>
         <article className="prose m-auto my-8">
+          <div className="text-center">
+            <span className="font-sans font-medium ">{category}</span>{" "}
+            | <span>{new Date(date).toUTCString().toString()}</span>
+          </div>
           <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
         </article>
       </div>
