@@ -18,7 +18,7 @@ export default function FeaturedWorkCard({
             {category}
           </div>
         </p>
-        <Link href={`/blog/${id}`}>
+        <Link href={id ? `/blog/${id}` : "/projects"}>
           <a
             aria-label="Category"
             className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
